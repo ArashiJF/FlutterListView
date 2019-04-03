@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 
+//In this case the list is a stateless widget
+//it wont change or anything
 class ImageList extends StatelessWidget {
   @override 
   Widget build(BuildContext context) {
-    final title = 'list from flutter documentation';
-  
-
 
     return Scaffold (
       body: _listbody()
     );
   }
-
+  //listbody is a widget container that has
+  //our list of images
+  //in this case we need to add each list tile manually
+  //also we need to import the images from assets 
   Widget _listbody() {
     return Container (
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(5),
       child: ListView (
       children: <Widget>[
         ListTile(
